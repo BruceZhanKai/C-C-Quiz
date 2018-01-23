@@ -66,10 +66,10 @@ void main(void)
 }
 ```
 Ans: Compile Error
+```
 Cuz: override寫法錯誤
 fix: void run override(){cout<<"Devired\n";}
 Ans after fix:
-```
 Derived
 Derived
 ```
@@ -95,10 +95,10 @@ void main()
 }
 ```
 Ans: Compile Error
+```
 Cuz: it's not a right way to use this in set()
 Hint: rule of three
 using operator like that
-```
 A& operator=(const A*& t)
 {
 	if(this!=t) this->x=t->x;
@@ -145,9 +145,11 @@ int Reverse(int x)
 
 ### Repeated String Match
 Quiz:
+```
 Given two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1.
 For example, with A = "abcd" and B = "cdabcdab".
 Return 3, because by repeating A three times (“abcdabcdabcd”), B is a substring of it; and B is not a substring of A repeated two times ("abcdabcd").
+```
 Ans:
 ```
 int repeatStringMatch(string A, string B)
@@ -165,6 +167,7 @@ int repeatStringMatch(string A, string B)
 
 ### Spiral Matrix II
 Quiz:
+```
 Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
 For example,
 Given n = 3,
@@ -174,6 +177,7 @@ You should return the following matrix:
  [ 8, 9, 4 ],
  [ 7, 6, 5 ]
 ]
+```
 Ans:
 ```
 vector<vector<int>> generateMatrix(int n)
