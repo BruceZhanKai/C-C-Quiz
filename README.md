@@ -3,13 +3,17 @@
 ## C
 
 ### const int* p 和 int* const q 兩者差異
+Ans:
+```
 p為指標變數，其指向的記憶體位置的數值無法被更動(宣告為const)。
 q為常數，宣告為指標變數後，代表q的記憶體無法被更動，無法再指向其他記憶體位置。
-
+```
 ### char s[] 與 char* s 的差別 ex:"Hello World"
+Ans:
+```
 char s[] 是 char arry ，包含 12 byte(含'\0')
 char* s 是指標指向char，s指向char的起始記憶體位置
-
+```
 ### 指標操作*p++
 Quiz: predict the output
 ```
@@ -32,6 +36,8 @@ Ans:
 0123456
 ```
 Hint:
+|operator|result|
+| -------- | -------- |
 |*p++=*(p++)|get->next|
 |*++p=*(++p)|next->get|
 |++*p=++(*p)|+1->get|
